@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login-Helper</title>
+        <!--CSS-->
+        <link rel="stylesheet" href="css/styles.css">
+        <!--JS-->
+        <script src="js/index.js" defer></script>
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <!--FontAwesome-->
+        <script src="https://kit.fontawesome.com/aaeed6fb53.js" crossorigin="anonymous" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Login-Helper</h1>
+        </header>
+        <main>
+            <form action="">
+                <section class="inputs-container">
+                    <input type="email" name="email" placeholder="Type your e-mail">
+                    <div class="password-container">
+                        <input type="password" name="password" id="field-password" class="field-password" placeholder="Type your password">
+                        <i class="fa fa-solid fa-eye" id="eye-open" onclick="showPassword()"></i>
+                        <i class="fa fa-solid fa-eye-slash" id="eye-close" onclick="showPassword()"></i>
+                    </div>
+                </section>
+
+                <section class="password-infos">
+                    <div>
+                        <input type="checkbox">
+                        <span>Remind your password?</span>
+                    </div>
+                    <a href="#">Forgot your password?</a>
+                </section>
+
+                <button id="btn-login">Login</button>
+
+                <section class="links-container">
+                    <span>Login with:</span>
+                    <aside>
+                        <a href="#"><i class="fa fa-brands fa-google-plus-square google"></i></a>
+                        <a href="#"><i class="fa fa-brands fa-linkedin linkedin"></i></a>
+                        <a href="#"><i class="fa fa-brands fa-facebook-square facebook"></i></a>
+                    </aside>
+                </section>
+
+                <footer>
+                    <hr>
+                    <span>Don't you already have an account? <a href="#">Sign-in</a></span>
+                </footer>
+            </form>
+        </main>
+    </body>
+</html>
